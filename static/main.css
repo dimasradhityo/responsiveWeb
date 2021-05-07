@@ -90,7 +90,7 @@ body {
 	border-color: red; 
 }
 
-.main-content > p {
+.main-headline > p {
 	max-width: inherit;
 	color: #0f81e9;
 	font-family: 'Montserrat', sans-serif;
@@ -98,4 +98,11 @@ body {
 
 .container-sm {
 	/*max-width: inherit;*/
+}
+
+.blog-footer {
+	padding: .25rem;
+	background-color: #a4a4a485;
+	text-align: center;
+	border-top: 1px solid #e5e5e5; 
 }
