@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body id="bg-pollutant">
 	<header class="container">
 		<div class="blog-header py-3">
 			<div class="row flex-nowrap justify-content-between align-items-center">
@@ -42,13 +42,21 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<button type="button" class="btn btn-primary">$10</button>
-					<button type="button" class="btn btn-primary">$25</button>
-					<button type="button" class="btn btn-primary">$50</button>
+					<form class="" id="donateForm">
+						<div class="form-check">
+							<input type="checkbox" id="flexCheck5" class="form-check-input" value="5">
+							<label class="form-check-label" for="flexCheck5">$5</label>	
+						</div>
+						<div class="form-check">
+							<input type="checkbox" id="flexCheck10" class="form-check-input" value="10">
+							<label class="form-check-label" for="flexCheck10">$10</label>
+						</div>
+						<button type="submit" class="btn btn-primary btn-sm">Checkout</button>
+					</form>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Checkout</button>
+					<p class="text-muted">checkout button will take you to Checkout Page.</p>
+					<button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
 				</div>
 			</div>
 		</div>
@@ -84,12 +92,24 @@
 		</div>
 	</main>
 
-	<footer class="blog-footer">
-			<p>
-				Learn Responsive Web using
-				<a href="https://getbootstrap.com">Bootsrap V5</a>
-			</p>
+	<footer class="blog-footer mt-auto py-3">
+		<p>
+			Learn Responsive Web using
+			<a href="https://getbootstrap.com">Bootsrap V5</a>
+		</p>
 	</footer>
+
+	<!-- Script for checkout modal -->
+	<script type="text/javascript">
+		const form = document.getElementById("formDonate")
+		const dollar = document.getElementById("")
+
+		function checkout(id){
+			let dollar = id;
+			sessionStorage.setItem('donate', dollar);	
+		}
+	</script>
+
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
