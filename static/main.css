@@ -9,6 +9,14 @@ body#bg-pollutant {
 	/*color: white;*/
 }
 
+.merch-page{
+	max-width: 1600px !important;
+}
+
+.ecommerce {
+	max-width: 1200px !important;
+}
+
 .container {
 	max-width: 1320px;
 }
