@@ -115,6 +115,11 @@ body#bg-pollutant {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.img-kategori {
+	height: 120px !important;
+	width: 120px !important;
+}
+
 .container-sm {
 	/*max-width: inherit;*/
 }
