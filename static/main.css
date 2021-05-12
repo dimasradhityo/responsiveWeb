@@ -18,7 +18,7 @@ body#bg-pollutant {
 }
 
 .merch-page{
-	max-width: 1600px !important;
+	max-width: 1300px !important;
 }
 
 .ecommerce {
@@ -123,10 +123,7 @@ body#bg-pollutant {
 	font-family: 'Montserrat', sans-serif;
 }
 
-.img-kategori {
-	height: 120px !important;
-	width: 120px !important;
-}
+
 
 .item-desc {
 	width: 100%;
@@ -160,3 +157,27 @@ body#bg-pollutant {
 .card-text-size {
 	font-style: .75em !important;
 }
+
+
+/*@media screen and (max-width: 992px) {
+	.card {
+		width: 100%;
+	}
+}*/
+
+@media only screen and (max-width: 992px) {
+  /* For mobile phones: */
+  .col-md-3 {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* For mobile phones: */
+  .col-md-2 {
+    margin-bottom: ($spacer * .25) !important;
+  }
+}
+
+
+mb-1
