@@ -2,11 +2,19 @@
 	box-sizing: border-box;
 }*/
 
+/*body#page-ecommerce{
+	min-height: 100vh;
+}
+*/
 body#bg-pollutant {
 	background: url("image/beach-pollutant1.jpg");
 	background-repeat: no-repeat;
 	background-size: 1920px 1080px;
 	/*color: white;*/
+}
+
+.container {
+	max-width: 1320px;
 }
 
 .merch-page{
@@ -17,8 +25,8 @@ body#bg-pollutant {
 	max-width: 1200px !important;
 }
 
-.container {
-	max-width: 1320px;
+.page-cart {
+	max-width: 960px !important;
 }
 
 .payment {
@@ -120,6 +128,20 @@ body#bg-pollutant {
 	width: 120px !important;
 }
 
+.item-desc {
+	width: 100%;
+}
+
+.item-desc-img {
+	height: 120px;
+	width: 100px;
+}
+
+.input-label-check {
+	height: 20px;
+	width: 20px;
+}
+
 .container-sm {
 	/*max-width: inherit;*/
 }
@@ -129,4 +151,12 @@ body#bg-pollutant {
 	background-color: #a4a4a485;
 	text-align: center;
 	border-top: 1px solid #e5e5e5; 
+}
+
+.title-size {
+	font-size: 1em !important;
+}
+
+.card-text-size {
+	font-style: .75em !important;
 }
