@@ -50,17 +50,61 @@
 		<div class="row m-3 p-1">
 			<div class="col-md-2 border rounded-3 me-3 ">
 				<h5><span class="badge badge-secondary text-dark mt-1">Filter</span></h5>
-				<hr class="mb-3">
-				<div class="dropdown m-3">
-					<a href="#" class="dropdown-toggle" id="dropdownMenu1" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none;">Filter Func</a>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-						<li><a href="#" style="text-decoration: none;">Filter A</a></li>
-						<li><a href="#" style="text-decoration: none;">Filter B</a></li>
-						<li><a href="#" style="text-decoration: none;">Filter C</a></li>
-					</ul>
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h6 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					        Filter A
+					      </button>
+					    </h6>
+					    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<ul class="list-group">
+									<li><a style="text-decoration: none;">SubFilter A#1</a></li>
+									<li><a style="text-decoration: none;">SubFilter A#2</a></li>
+									<li><a style="text-decoration: none;">SubFilter A#3</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h6 class="accordion-header" id="headingTwo">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					        Filter B
+					      </button>
+					    </h6>
+					    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<li class="list-group">
+									<li><a style="text-decoration: none;">SubFilter B#1</a ></li>
+									<li><a style="text-decoration: none;">SubFilter B#2</a ></li>
+								</li>
+							</div>
+						</div>
+					</div>
 				</div>
-				
+				<hr class="mb-3">
+				<h5><span class="badge badge-secondary text-dark mt-1">Lokasi</span></h5>
+				<div class="form-check">
+					<input type="checkbox" name="" class="form-check-input">
+					<label class="form-check-label">Lokasi 1</label>
+				</div>	
+				<div class="form-check">
+					<input type="checkbox" name="" class="form-check-input">
+					<label class="form-check-label">Lokasi 2</label>
+				</div>
+				<hr class="mb-3">
+				<h5><span class="badge badge-secondary text-dark mt-1">Harga</span></h5>
+				<div class="input-group input-group-sm mb-3">
+					<span class="input-group-text" id="inputGroup-sizing-sm">Rp</span>
+					<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Harga Minimum">
+				</div>
+				<div class="input-group input-group-sm mb-3">
+					<span class="input-group-text" id="inputGroup-sizing-sm">Rp</span>
+					<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Harga Maksimum">
+				</div>
 			</div>
+			
 			<div class="col-md-9 border rounded-3">
 
 				<h5><span class="badge badge-secondary text-dark mt-1">Produk</span></h5>
